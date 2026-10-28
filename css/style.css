@@ -141,10 +141,10 @@ a:hover {
     min-width: 0;
     border-collapse: collapse;
     margin: 0;
-    background-color: #f8f9fa;
+    background-color: #faf9f8;
     font-size: 13px;
     text-align: left;
-    border: 1px solid #a2a9b1;
+    border: 1px solid #b1ada2;
     overflow-wrap: anywhere;
 }
 
@@ -274,7 +274,7 @@ html {
     min-height: 230px;
 
     padding: 20px;
-    background-color:#a9c5f5
+    background-color:#b2ffff;
 
     ;
 }
@@ -345,25 +345,6 @@ html {
     margin: 12px auto;
 }
 
-.creditos {
-    display: flex;
-    justify-content: center;
-    gap: 45px;
-    flex-wrap: wrap;
-    margin: 12px 0;
-}
-
-
-.credito-item h3 {
-    font-size: 14px;
-    margin: 5px 0;
-    color:#3366cc;
-}
-
-.credito-item p {
-    font-size: 13px;
-    margin: 3px 0;
-}
 
 .rodape-final {
     border-top: 1px solid white;
@@ -422,7 +403,7 @@ html {
         overflow-wrap: anywhere;
     }
 
-    
+  
     .Jupiter,
     .informacao img {
         max-width: 100%;
@@ -501,11 +482,7 @@ html {
         margin: auto;
     }
 
-    .creditos {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
+   
 
     .rodape-titulo h2 {
         font-size: 23px;
@@ -520,3 +497,90 @@ img {
 
 
 
+/* SEÇÃO DA EQUIPE */
+.equipe {
+    margin: 40px 25px 50px 265px;
+    padding: 25px;
+    background-color: #f4f8fc;
+    border: 1px solid #dce8f5;
+}
+
+.equipe h2 {
+    color: #173e68;
+    text-align: left;
+    font-size: 26px;
+    margin: 0 0 8px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #c6d9ee;
+}
+
+.equipe-descricao {
+    color: #53677d;
+    margin: 12px 0 25px;
+    text-align: left;
+}
+
+/* CARTÕES */
+.equipe-cartoes {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.equipe-card {
+    flex: 1 1 180px;
+    max-width: 240px;
+    padding: 25px 15px;
+    background-color: #faf9f8;
+    border: 1px solid #dce8f5;
+    
+    text-align: center;
+    box-shadow: 0 4px 12px #173e6812;
+}
+
+.equipe-card img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 3px solid #d6e7f8;
+}
+
+.equipe-card h3 {
+    color:#aab7c6;
+    font-size: 19px;
+    margin: 15px 0 6px;
+}
+
+.equipe-card p {
+    color: #53677d;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+    .equipe {
+        margin: 30px 15px;
+        padding: 18px 12px;
+    }
+
+    .equipe h2 {
+        font-size: 22px;
+    }
+
+    .equipe-cartoes {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .equipe-card {
+        width: 100%;
+        max-width: 280px;
+        flex: none;
+    }
+}
